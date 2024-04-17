@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #ffcc00;
+}
+        .menu {
+            padding: 20px;
+        }
+
+        .menu h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .menu-item {
+            flex: 0 1 calc(33.33% - 20px);
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .menu-item h3 {
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .menu-item p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .menu-item button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .menu-item button:hover {
+            background-color: #0056b3;
+        }
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Style for delivery and collection details sections */
+        .delivery-details {
+            display: left;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        /* Style for each form */
+        form {
+            width: 45%; /* Adjust as needed */
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Style for form labels and inputs */
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Clearfix to prevent overlapping */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        footer {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .opening-times {
+            margin-bottom: 20px;
+        }
+
+        .opening-times h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .opening-times ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+
+        .opening-times li {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .social-media img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+
+        .social-media img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <style>
+            /* Your CSS styles here */
+        </style>
+    </head>
+    <body>
+        <header class="sticky-header">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="assets/Capture.PNG" alt="TeaZen Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li><a href="reservation.html">reservation</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <section class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item" data-name="Gyutenyaki" data-price="12.90">
+                <img src="assets/gyutanyaki.avif" alt="Gyutenyaki Image">
+                <h3>Gyutenyaki</h3>
+                <p>£12.90</p>
+                <p>Grilled beef tongue, seasoned to perfection.</p>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+            <div class="menu-item">
+                <img src="assets/gyudon.jpg" alt="Gyudon Image">
+                <h3>Gyudon</h3>
+                <p>£10.99</p>
+                <p>Simmered beef and onions served over rice.</p>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Onigiri.jpg" alt="Onigiri Image">
+                <h3>Onigiri</h3>
+                <p>£8.00</p>
+                <p>Rice balls with various fillings, wrapped in seaweed.</p>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Sashimi.jpg" alt="Image">
+                <h3>Sashimi</h3>
+                <p>£13.49</p>
+                <p>Fresh slices of raw fish, served with soy sauce and wasabi.</p>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Tempura.png" alt="Image">
+                <h3>Tempura</h3>
+                <p>£12.49</p>
+                <p>Lightly battered and deep-fried seafood and vegetables.</p>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Miso Soup.webp" alt="Image">
+                <h3>Miso Soup</h3>
+                <p>£5.49</p>
+                <p>Traditional Japanese soup made with miso paste, tofu, and seaweed.</p>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Yakitori.jpg" alt="Image">
+                <h3>Yakitori</h3>
+                <p>£12.00</p>
+                <p>Skewered and grilled chicken, typically served with tare sauce.</p>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Ramen.jpg" alt="Image">
+                <h3>Ramen</h3>
+                <p>£4.99</p>
+                <p>Japanese noodle soup with various toppings and a flavorful broth.</p>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Matcha Ice Cream.jpg" alt="Image">
+                <h3>Matcha Ice Cream</h3>
+                <p>£2.99</p>
+                <p>Green tea flavored ice cream, rich and creamy.</p>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Bubble Tea.jpg" alt="Image">
+                <h3>Bubble Tea</h3>
+                <p>£2.99</p>
+                <p>Cold, sweet tea-based beverage with tapioca pearls.</p>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="basket">
+        <h2>Your Basket</h2>
+        <ul id="basket-items">
+            <!-- Basket items will be dynamically added here -->
+        </ul>
+        <p>Total for collection: £<span id="subtotal">0.00</span></p>
+        <div>
+            <label for="tip">Tip:</label>
+            <select id="tip">
+                <option value="0">No Tip</option>
+                <option value="0.1">10%</option>
+                <option value="0.2">20%</option>
+                <option value="0.5">50%</option>
+            </select>
+        </div>
+        <p>Delivery Charge: £2.00</p>
+        <p>Total (Including Tip and Delivery): £<span id="total">0.00</span></p>
+    </section>
+    <section class="delivery-details">
+        <h2>Delivery Details</h2>
+        <form id="delivery-form" action="delivery.html" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea><br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" optional><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <section class="delivery-details">
+        <h2>collection Details</h2>
+        <form id="collection-form" action="collection.html" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" optional><br><br>
+            <label for="time">collection time:</label>
+            <input type="time" id="time" required><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <script>
+        // Function to add item to basket
+        function addToBasket(button) {
+            var menuItem = button.parentElement;
+            var itemName = menuItem.querySelector('h3').textContent;
+            var itemPrice = parseFloat(menuItem.querySelector('p').textContent.replace('£', ''));
+
+            // Create list item for basket
+            const basketItem = document.createElement('li');
+            basketItem.innerHTML = `${itemName} - £${itemPrice.toFixed(2)}`;
+
+            // Append basket item to list
+            document.getElementById('basket-items').appendChild(basketItem);
+
+            // Update subtotal
+            updateSubtotal(itemPrice);
+
+            // Update total
+            updateTotal();
+        }
+
+        // Function to update subtotal
+        function updateSubtotal(price) {
+            const subtotal = document.getElementById('subtotal');
+            const currentSubtotal = parseFloat(subtotal.textContent);
+            const newSubtotal = currentSubtotal + price;
+            subtotal.textContent = newSubtotal.toFixed(2);
+        }
+
+        // Function to update total
+        function updateTotal() {
+            const subtotal = parseFloat(document.getElementById('subtotal').textContent);
+            const tipPercentage = parseFloat(document.getElementById('tip').value);
+            const deliveryCharge = 2.00;
+            const tip = subtotal * tipPercentage;
+            const total = subtotal + tip + deliveryCharge;
+            document.getElementById('total').textContent = total.toFixed(2);
+        }
+
+        // Retrieve all "Add to Basket" buttons
+        const addToBasketButtons = document.querySelectorAll('.add-to-basket');
+
+        // Add click event listener to each button
+        addToBasketButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Call addToBasket function when button is clicked
+                addToBasket(button);
+            });
+        });
+
+        // Add change event listener to tip option
+        document.getElementById('tip').addEventListener('change', updateTotal);
+    </script>
+</body>
+</html>

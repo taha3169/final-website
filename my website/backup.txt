@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeaZen</title>
+    <link rel="stylesheet" href="webpage.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/Capture.PNG" alt="TeaZen Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Add to Basket.html">basket</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="home">
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="assets/mainpage.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets/mainp2.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+        <section class="restaurant-description">
+            <div class="description">
+                <p>Welcome to TeaZen! Indulge in a culinary journey where flavors meet innovation and tales of comfort. Nestled in the heart of peterborough, our restaurant blends contemporary design with warm hospitality to create an unforgettable dining experience.</p>
+        
+                <p>Savor the aroma of freshly prepared dishes crafted with locally sourced ingredients, each plate a masterpiece of culinary craftsmanship. From hearty classics to daring culinary creations, our menu caters to diverse palates, ensuring every guest finds a dish to delight their senses.</p>
+        
+                <p>At TeaZen, we believe that great food is more than just a meal—it's a celebration of life's simple pleasures. Join us and embark on a gastronomic adventure that transcends taste, leaving memories to savor long after the last bite.</p>
+            
+            
+            </div>
+        </section>
+
+
+        <section id="about" class="about">
+            <!-- About section content -->
+        </section>
+        <section id="location" class="location">
+            <h2>Our Location</h2>
+            <!-- Embed Google Maps location -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2454.0385937777096!2d-0.24237848427414447!3d52.57275637982123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877f60b2cd1782b%3A0x99b65aebd63881e7!2sUniversity%20House%2C%20Bishop's%20Rd%2C%20Peterborough%20PE1%205BW!5e0!3m2!1sen!2suk!4v1649150077095!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <section id="menu" class="menu">
+            <!-- Menu section content -->
+        </section>
+        <section class="location">
+            <h2>TeaZen Peterborough</h2>
+            <p>Oriental restaurant in Peterborough</p>
+            <p>University House, Bishop's Rd, Peterborough PE1 5BW</p>
+            <p>Phone: +44 01733968268</p>
+            <p>Service options:</p>
+            <ul>
+                <li>Dine-in</li>
+                <li>Takeaway</li>
+                <li>No-contact delivery</li>
+            </ul>
+        </section>
+        
+        <section class="hours">
+            <h2>Hours:</h2>
+            <ul>
+                <li>Monday: 12pm–10pm</li>
+                <li>Tuesday: 12pm–10pm</li>
+                <li>Wednesday: 12pm–10pm</li>
+                <li>Thursday: 12pm–10pm</li>
+                <li>Friday: 12pm–11pm</li>
+                <li>Saturday: 12pm–11pm</li>
+                <li>Sunday: 12pm–10pm</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <!-- Contact section content -->
+        </section>
+    </main>
+    <main>
+        <section id="location" class="location">
+            <div id="location-image">
+                <img src="assets/teazenlocation.png" alt="TeaZen Location">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="webpage.js"></script>
+    <footer>
+        <p>&copy; 2024 TeaZen. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeaZen - Menu</title>
+    <link rel="stylesheet" href="webpage.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/Capture.PNG" alt="TeaZen Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Add to Basket.html">Basket</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item" data-name="Gyutenyaki" data-price="12.90">
+                <img src="assets/gyutanyaki.avif" alt="Gyutenyaki Image">
+                <h3>Gyutenyaki</h3>
+                <p>Grilled beef tongue, seasoned to perfection.</p>
+                <p>£12.90</p>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+            <div class="menu-item">
+                <img src="assets/gyudon.jpg" alt="Gyudon Image">
+                <h3>Gyudon</h3>
+                <p>Simmered beef and onions served over rice.</p>
+                <p>£10.99</p>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Onigiri.jpg" alt="Onigiri Image">
+                <h3>Onigiri</h3>
+                <p>Rice balls with various fillings, wrapped in seaweed.</p>
+                <p>£8.00</p>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Sashimi.jpg" alt="Image">
+                <h3>Sashimi</h3>
+                <p>Fresh slices of raw fish, served with soy sauce and wasabi.</p>
+                <p>£13.49</p>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Tempura.png" alt="Image">
+                <h3>Tempura</h3>
+                <p>Lightly battered and deep-fried seafood and vegetables.</p>
+                <p>£12.49</p>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Miso Soup.webp" alt="Image">
+                <h3>Miso Soup</h3>
+                <p>Traditional Japanese soup made with miso paste, tofu, and seaweed.</p>
+                <p>£5.49</p>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Yakitori.jpg" alt="Image">
+                <h3>Yakitori</h3>
+                <p>Skewered and grilled chicken, typically served with tare sauce.</p>
+                <p>£12.00</p>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Ramen.jpg" alt="Image">
+                <h3>Ramen</h3>
+                <p>Japanese noodle soup with various toppings and a flavorful broth.</p>
+                <p>£4.99</p>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Matcha Ice Cream.jpg" alt="Image">
+                <h3>Matcha Ice Cream</h3>
+                <p>Green tea flavored ice cream, rich and creamy.</p>
+                <p>£2.99</p>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+            <div class="menu-item">
+                <img src="assets/Bubble Tea.jpg" alt="Image">
+                <h3>Bubble Tea</h3>
+                <p>Cold, sweet tea-based beverage with tapioca pearls.</p>
+                <p>£2.99</p>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="basket">
+        <h2>Your Basket</h2>
+        <ul id="basket-items">
+            <!-- Basket items will be dynamically added here -->
+        </ul>
+        <p>Total: £<span id="basket-total">0.00</span></p>
+    </section>
+
+
+
+    <script>
+        // Function to add item to basket
+        function addToBasket(button) {
+            var menuItem = button.parentElement;
+            var itemName = menuItem.querySelector('h3').textContent;
+            var itemPrice = parseFloat(menuItem.querySelector('p').textContent.replace('£', ''));
+
+            // Create list item for basket
+            const basketItem = document.createElement('li');
+            basketItem.innerHTML = `${itemName} - £${itemPrice.toFixed(2)}`;
+
+            // Append basket item to list
+            document.getElementById('basket-items').appendChild(basketItem);
+
+            // Update total
+            updateTotal(itemPrice);
+        }
+
+        // Function to update total
+        function updateTotal(price) {
+            const basketTotal = document.getElementById('basket-total');
+            const currentTotal = parseFloat(basketTotal.textContent);
+            const newTotal = currentTotal + price;
+            basketTotal.textContent = newTotal.toFixed(2);
+        }
+
+        // Retrieve all "Add to Basket" buttons
+        const addToBasketButtons = document.querySelectorAll('.add-to-basket');
+
+        // Add click event listener to each button
+        addToBasketButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Call addToBasket function when button is clicked
+                addToBasket(button);
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeaZen - Discover the Essence of Japanese Tea Culture</title>
+    <link rel="stylesheet" href="webpage.css">
+    <style>
+        /* Add any additional CSS styles here */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/Capture.PNG" alt="TeaZen Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Add to Basket.html">Basket</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about">
+        <div class="content">
+            <h2>Welcome to TeaZen!</h2>
+            <p>Embark on a journey through the essence of Japanese tea culture at TeaZen. Delve into the world of exquisite Japanese teas and delicacies meticulously curated to elevate your senses and enrich your soul.</p>
+            <p>Our story begins with a profound appreciation for the ancient traditions of Japanese tea ceremonies. At TeaZen, we embrace these traditions while infusing a modern twist, offering a sanctuary where tea enthusiasts and novices alike can gather to savor moments of tranquility.</p>
+            <p>With each sip of our meticulously brewed teas and every bite of our authentic Japanese cuisine, immerse yourself in a symphony of flavors and aromas that tantalize the palate and nourish the spirit.</p>
+            <p>TeaZen is more than a destination; it's an invitation to explore the depths of tea culture, to linger in moments of serenity, and to forge connections that transcend boundaries. Whether you seek solace in solitude or camaraderie in company, our doors are open to all who seek to discover the transformative power of tea.</p>
+            <p>Join us on a journey of discovery, where every cup tells a story, and every moment is infused with the essence of tranquility. Welcome to TeaZen – your oasis of peace amidst the chaos of everyday life.</p>
+        </div>
+        <div class="creators">
+            <h3>Meet the Creators</h3>
+            <p>Get to know the visionaries behind TeaZen - the passionate souls who embarked on a mission to share the beauty of Japanese tea culture with the world.</p>
+            <!-- Add image of creators here -->
+            <img src="assets/creator of teazen.webp" alt="TeaZen Creators">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TeaZen. All rights reserved.</p>
+    </footer>
+</body>
+</html>

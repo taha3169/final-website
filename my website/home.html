@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #ffcc00;
+}
+        .menu {
+            padding: 20px;
+        }
+
+        .menu h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .menu-item {
+            flex: 0 1 calc(33.33% - 20px);
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .menu-item h3 {
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .menu-item p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .menu-item button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .menu-item button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .opening-times {
+            margin-bottom: 20px;
+        }
+
+        .opening-times h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .opening-times ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+
+        .opening-times li {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .social-media img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+
+        .social-media img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <style>
+            /* Your CSS styles here */
+        </style>
+    </head>
+    <body>
+        <header class="sticky-header">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="assets/Capture.PNG" alt="TeaZen Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                    <li><a href="reservation.html">reservation</a></li>
+
+                </ul>
+            </nav>
+        </header>
+    <main>
+        <section id="home" class="home">
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="assets/mainpage.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="assets/mainp2.jpg" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+        <section class="restaurant-description">
+            <div class="description">
+                <p>Welcome to TeaZen! Indulge in a culinary journey where flavors meet innovation and tales of comfort. Nestled in the heart of peterborough, our restaurant blends contemporary design with warm hospitality to create an unforgettable dining experience.</p>
+        
+                <p>Savor the aroma of freshly prepared dishes crafted with locally sourced ingredients, each plate a masterpiece of culinary craftsmanship. From hearty classics to daring culinary creations, our menu caters to diverse palates, ensuring every guest finds a dish to delight their senses.</p>
+        
+                <p>At TeaZen, we believe that great food is more than just a meal—it's a celebration of life's simple pleasures. Join us and embark on a gastronomic adventure that transcends taste, leaving memories to savor long after the last bite.</p>
+            
+            
+            </div>
+        </section>
+
+
+        <section id="about" class="about">
+            <!-- About section content -->
+        </section>
+        <section id="location" class="location">
+            <h2>Our Location</h2>
+            <!-- Embed Google Maps location -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2454.0385937777096!2d-0.24237848427414447!3d52.57275637982123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877f60b2cd1782b%3A0x99b65aebd63881e7!2sUniversity%20House%2C%20Bishop's%20Rd%2C%20Peterborough%20PE1%205BW!5e0!3m2!1sen!2suk!4v1649150077095!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+        <section id="menu" class="menu">
+            <!-- Menu section content -->
+        </section>
+        <section class="location">
+            <h2>TeaZen Peterborough</h2>
+            <p>Oriental restaurant in Peterborough</p>
+            <p>University House, Bishop's Rd, Peterborough PE1 5BW</p>
+            <p>Phone: +44 01733968268</p>
+            <p>Service options:</p>
+            <ul>
+                <li>Dine-in</li>
+                <li>Takeaway</li>
+                <li>No-contact delivery</li>
+            </ul>
+        </section>
+        <a href="menu.html">
+            <img src="assets/menubutton.png" alt="Menu Image">
+        </a>
+
+        <section id="contact" class="contact">
+            <!-- Contact section content -->
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script src="webpage.js"></script>
+    <footer>
+        <div class="opening-times">
+            <h3>Opening Times</h3>
+            <ul>
+                <li><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</li>
+                <li><strong>Saturday:</strong> 10:00 AM - 4:00 PM</li>
+                <li><strong>Sunday:</strong> Closed</li>
+            </ul>
+        </div>
+        <div class="social-media">
+            <a href="home.html" target="_blank" rel="noopener noreferrer">
+                <img src="assets/Facebook.png" alt="Facebook Logo">
+            </a>
+            <a href="home.html" target="_blank" rel="noopener noreferrer">
+                <img src="assets/Instagram.png" alt="Instagram Logo">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
